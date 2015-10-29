@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Saludo Example for React.js</title>
+</head>
+<body>
+	<section id="container"></section>
+	<script src="http://fb.me/react-0.13.3.js"></script>
+	<script src="http://fb.me/JSXTransformer-0.13.3.js"></script>
+	<script type="text/jsx;harmony=true">
+		var HelloWorldComponent = React.createClass({
+			propTypes: {
+				
+			},
+			render: function(){
+				return <h1>Hola {this.props.name}</h1>
+			}
+		});
+		React.render(<HelloWorldComponent name="Ricardo"/>, document.getElementById('container'));
+		
+		setTimeout(function(){
+			React.render(<HelloWorldComponent name="Ricardo desde React.js"/>, document.getElementById('container'));
+		}, 3000);
+	</script>
+</body>
+</html>
