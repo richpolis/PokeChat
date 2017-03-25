@@ -7,11 +7,6 @@ import PokeTable from './PokeTable';
 import PokeChat from './PokeChat';
 
 export default class PokeApp extends React.Component{
-	constructor(props){
-		super(props);
-		this.state = { messages: [] };
-	}
-	
 	onGrowl(name){
 		var text = '${name}, ${name}!';
 		var messages = this.state.messages.push({text. text});
