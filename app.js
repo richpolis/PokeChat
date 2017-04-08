@@ -3,6 +3,7 @@
 */
 
 import React from 'react';
+import ReactDOM from 'react-dom';
 import PokeApp from './components/PokeApp';
 
-React.render(<PokeApp />, document.getElementById('container'));
+ReactDOM.render(<PokeApp />, document.getElementById('container'));

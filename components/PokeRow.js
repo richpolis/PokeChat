@@ -7,7 +7,7 @@ import PokeAvatar from './PokeAvatar';
 
 class PokeRow extends React.Component{
 	onClick(ev){
-		this.props.growl.call(this,this.props.name);
+		this.props.growl.call(null, this.props.name);
 	}
 	
 	render(){
